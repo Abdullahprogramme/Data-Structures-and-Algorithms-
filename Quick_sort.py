@@ -17,6 +17,12 @@ def Partition(A, lb, ub):
             A[start], A[end] = A[end], A[start]
     A[lb], A[end] = A[end], A[lb]
     return end
+# O(nlogn) time complexity best case
+# O(n^2) time complexity worst case
+
+''' formula 
+time complexity = complexity at each level * number of levels
+'''
 
 A = [5, 3, 8, 4, 2, 7, 1, 10]
 Quick_sort(A, 0, len(A) - 1)
